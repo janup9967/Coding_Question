@@ -17,9 +17,9 @@ left = 0
 maxLength = 0
 for right in range(len(str1)):
     while str1[right] in char_set:
-        char_set.remove(s[left])
+        char_set.remove(str1[left])
         left +=1
     char_set.add(str1[right])
-    maxlength = max(maxLength, right-left+1)
+    maxLength = max(maxLength, right-left+1)
     
 print(maxLength)
